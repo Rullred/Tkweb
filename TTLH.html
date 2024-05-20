@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <li><a href="index.html">TRANG CHỦ</a></li>
+    <title>Thông Tin Liên Hệ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+         header {
+			background-color: #fff;
+			padding: 20px;
+			text-align: center;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			position: relative; 
+		}
+		.back-button {
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			width: 30px; 
+			height: 30px;
+		}
+		.logo {
+			margin-top: 10px; 
+			color: #333;
+			font-size: 24px; 
+		}
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 30px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: red;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            color: black;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        ul li a:hover {
+            color: #0056b3;
+        }
+        form {
+            margin-top: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            text-align: left;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: red;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+			.rounded-button {
+		background-color: white;
+		color: black;
+		padding: 5px 20px;
+		border: 2px solid red;
+		border-radius: 10px;
+		text-decoration: none;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
+	.rounded-button:hover {
+		background-color: white;
+		color: blue;
+	}
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+		<h2>Thông tin liên hệ</h2>
+            <ul> 
+			    <li><b>Điạ chỉ: Ấp 5, Xã Mỹ Long Nam , Huyện Cầu Ngang, Tỉnh Trà Vinh </b></li>
+			    <li><b>Facebook: Hiếu phamn link fb: https://www.facebook.com/bac.cuc.90?mibextid=ZbWKwL</b></li>
+                <li><b> Zalo: Phạm Trung Hiếu SĐT: 0363331677 </b></li>
+                <li><b>Email: <a href="">phamtrunghieudhi1301@gmail.com<b></a></li>
+                <li><b>Điện thoại: 0363331677</b></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Biểu mẫu liên hệ</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Họ tên:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Nội dung:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <br>
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+	  <script>
+  function goBack() {
+    window.history.back();
+}
+  </script>
+   <footer>
+        <div class="container">
+            <p><b>Địa chỉ: số nhà 102, Xã Mỹ Long Nam, Huyện Cầu Ngang, Tỉnh Trà Vinh &copy; 2024, Trung Tâm Tư Vấn Về Thú Cưng Trực Tuyến.<b></p>
+        </div>
+    </footer>
+</body>
+</html>
